@@ -35,3 +35,5 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+      +grants:
+        select: ['direct_6234_dce29']
