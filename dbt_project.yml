@@ -34,6 +34,6 @@ models:
   test_project:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: view
+      +materialized: table
       +grants:
-        select: ['direct_6234_dce29']
+        all: ['direct_6234_dce29']
