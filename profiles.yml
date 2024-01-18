@@ -1,0 +1,12 @@
+test_project:
+  outputs:
+    dev:
+      dbname: postgres
+      host: "{{ env_var('DB_HOST') }}"
+      pass: "{{ env_var('DB_PASS') }}"
+      port: 5432
+      schema: direct_6234_dce29
+      threads: 1
+      type: postgres
+      user: direct_6234_dce29
+  target: dev

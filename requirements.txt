@@ -1,0 +1,4 @@
+dbt-postgres==1.0.0
+dbt-rpc==0.1.1
+markupsafe==2.0.1
+json-rpc<1.14.0
