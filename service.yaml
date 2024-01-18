@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: acho-sdk-dbt-bvp
+  namespace: acho-function-registry
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+    spec:
+      containers:
+        - image: us-central1-docker.pkg.dev/tool-for-analyst/acho-function-registry/acho-sdk-dbt-bvp:latest
+          imagePullPolicy: Always
+            
